@@ -5,9 +5,13 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "dev":"tsc --watch"
+    "dev": "tsc --watch"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@types/jquery": "^3.3.33",
+    "jquery": "^3.4.1"
+  }
 }

@@ -9,8 +9,8 @@ console.log(new String(x).toLowerCase);  //这是内部实现的，我们不用�
 
 //断言  我强行告诉ts是一个什么类型
 let zname: number | string | null;
-console.log((zname as string).length)
-console.log((zname as number).toFixed(2));
+// console.log((zname as string).length)
+// console.log((zname as number).toFixed(2));
 
 
 //定义函数有二种方法 1种是函数定义

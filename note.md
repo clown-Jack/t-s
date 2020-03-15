@@ -60,3 +60,11 @@ console.log(g2) //1
 
 - 定义函数 接口或类的时候 不预先指定具体类型 而是在使用的时候再指定类型的一种特性
 - 作用域只限于函数内部
+
+## 安装声明文件
+- npm i @types/xxx -S
+- ![image-20200315210305436](/Users/songjie/Library/Application Support/typora-user-images/image-20200315210305436.png)
+
+## 合并声明
+
+![image-20200315213036344](/Users/songjie/Library/Application Support/typora-user-images/image-20200315213036344.png)
