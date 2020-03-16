@@ -20,7 +20,7 @@ module.exports = {
     resolve: {
         alias: {
             "~": path.join(__dirname, 'node_modules'),
-            "@": path.join(__dirname)
+            "@": path.join(__dirname, 'src')
         },
         extensions: ['.ts', '.tsx', '.js', '.json']
     },
@@ -44,9 +44,9 @@ module.exports = {
             use: ['url-loader']
         }]
     },
-    plugins:[
+    plugins: [
         new HTMLWebpackPlugin({
-            template:"./src/index.html"
+            template: "./src/index.html"
         }),
         new webpack.HotModuleReplacementPlugin()
     ]
