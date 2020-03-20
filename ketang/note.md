@@ -31,3 +31,5 @@ cqc![image-20200315215737842](/Users/songjie/Library/Application Support/typora-
 
 ![image-20200315223147126](/Users/songjie/Library/Application Support/typora-user-images/image-20200315223147126.png)
 
+## 上传文件
+- npm i multer -S

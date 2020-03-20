@@ -11,6 +11,8 @@ import Home from './routes/Home';
 import Mine from './routes/Mine';
 import Profile from './routes/Profile';
 import Tabs from './components/Tab';
+import Login from './routes/Login';
+import Register from './routes/Register';
 
 ReactDOM.render((
     <Provider store={store}>
@@ -20,6 +22,8 @@ ReactDOM.render((
                     <Route path="/" exact component={Home} />
                     <Route path="/mine" exact component={Mine} />
                     <Route path="/profile" exact component={Profile} />
+                    <Route path="/login" exact component={Login} />
+                    <Route path="/register" exact component={Register} />
                     <Redirect to="/" />
                 </Switch>
             </main>

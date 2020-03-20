@@ -68,3 +68,4 @@ console.log(g2) //1
 ## 合并声明
 
 ![image-20200315213036344](/Users/songjie/Library/Application Support/typora-user-images/image-20200315213036344.png)
+

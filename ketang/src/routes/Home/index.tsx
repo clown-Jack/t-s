@@ -19,9 +19,12 @@ type Props = StateProps&DispatchProps&RouteProps&{
 }
 class Home extends React.Component<Props,State> {
     render() {
+        console.log(this.props);
         return (
             <div>
-                <HomeHeader />
+                <HomeHeader 
+                setCurrentCategory = {this.props.setCurrentCategory}
+                currentCategory={this.props.currentCategory}/>
                 首页
             </div>
         )
