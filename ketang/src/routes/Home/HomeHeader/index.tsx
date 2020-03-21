@@ -30,7 +30,8 @@ interface State {
 }
 interface Props {
     currentCategory:string,
-    setCurrentCategory:any
+    setCurrentCategory:any,
+    refreshLessons:any
 }
 export default class HomeHeader extends Component<Props, State> {
     state = {
@@ -39,7 +40,10 @@ export default class HomeHeader extends Component<Props, State> {
     setCurrentCategory = (event:React.MouseEvent<HTMLUListElement>) => {
          let target:EventTarget = event.target;
          let type = (target as HTMLUListElement).dataset.type;
-         this.setState({in:false},()=>this.props.setCurrentCategory(type));     
+         this.setState({in:false},()=>{
+            this.props.setCurrentCategory(type);
+            this.props.refreshLessons();
+         });     
     }
     render() {
         return (
